@@ -4,7 +4,6 @@
 <head>
     <title>MC Mods | Wiki</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script src="js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -19,7 +18,7 @@
     </script>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent f2">
-        <a class="navbar-brand" href="#">MC Mods Wikipedia</a>
+        <a class="navbar-brand" href="#">Minecraft Mod Wiki</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -58,21 +57,22 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <a href="#tech"> <img class="carouselimg d-block w-100" src="media/te.jpg" alt="First slide">
+                <a data-toggle="collapse" href="#tech" role="button" aria-expanded="false" aria-controls="tech" onclick="down()">
+                    <img class="carouselimg d-block w-100" src="media/te.jpg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 class="f1">Tech Mods</h1>
                 </a>
                 </div>
             </div>
             <div class="carousel-item">
-                <a href="#magic"> <img class="carouselimg d-block w-100" src="media/astral.png" alt="Second slide">
+                <a data-toggle="collapse" href="#magic" role="button" aria-expanded="false" aria-controls="magic" onclick="down()"> <img class="carouselimg d-block w-100" src="media/astral.png" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 class="f1">Magic Mods</h1>
                 </a>
                 </div>
             </div>
             <div class="carousel-item">
-                <a href="#misc"><img class="carouselimg d-block w-100" src="media/chisel.png" alt="Third slide">
+                <a data-toggle="collapse" href="#misc" role="button" aria-expanded="false" aria-controls="misc" onclick="down()"><img class="carouselimg d-block w-100" src="media/chisel.png" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 class="f1">Misc Mods</h1>
                 </a>
@@ -94,12 +94,178 @@
     <div class="f1" alt="intro">
         <h2 class="ih2">The</h2>
         <h1 class="ih1">Minecraft Mod Wiki</h1>
-        <h3 class="jh2">is a database of Minecraft mods, data packs, bedrock edition add-ons, and resource packs.</h3>
+        <h3 class="jh2">is a database of Minecraft mods, data packs, Java edition add-ons, and resource packs.</h3>
     </div>
     <!--/Intro-->
-    <!--Yes-->
+    <hr>
+    <div class="accordion" id="accordionExample" data-default="1">
 
-    <!--/Yes-->
+        <!--Default(Types)-->
+        <div class="collapse show" id="default" data-parent="#accordionExample">
+            <div class="f2 center">
+                <h1 class="oh4">Mod categories</h1>
+            </div>
+
+            <div class="row">
+                <div class="card col-3" style="width: 18rem;">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Tech mods</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consequatur aliquam recusandae, neque eaque blanditiis illum quis quia eum officiis. Itaque iste explicabo provident tempora error debitis distinctio quisquam suscipit.</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+
+                <div class="card col-3" style="width: 18rem;">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Magic mods</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consequatur aliquam recusandae, neque eaque blanditiis illum quis quia eum officiis. Itaque iste explicabo provident tempora error debitis distinctio quisquam suscipit.</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+
+                <div class="card col-3" style="width: 18rem;">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title">Misc mods</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consequatur aliquam recusandae, neque eaque blanditiis illum quis quia eum officiis. Itaque iste explicabo provident tempora error debitis distinctio quisquam suscipit.</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a id="default"></a>
+        <!--/Default-->
+
+
+        <!--Tech-->
+        <div class="collapse container-fluid" id="tech" data-parent="#accordionExample">
+            <div class="f2 center">
+                <h1 class="oh2">Tech mods</h1>
+            </div>
+
+            <div class="row">
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a id="tech"></a>
+        <!--/Tech-->
+
+        <!--Magic-->
+        <div data-parent="#accordionExample" class="collapse container-fluid" id="magic">
+            <div class="f2 center">
+                <h1 class="oh1">Magic mods</h1>
+            </div>
+
+            <div class="row">
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a id="magic"></a>
+        <!--/Magic-->
+
+        <!--Misc-->
+        <div class="collapse container-fluid" id="misc" data-parent="#accordionExample">
+            <div class="f2 center">
+                <h1 class="oh3">Misc mods</h1>
+            </div>
+
+            <div class="row">
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a id="misc"></a>
+        <!--/Misc-->
+    </div>
+    <hr>
+    <!--Contact or w/e-->
+    <p>
+        <div class="gen20">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis deserunt dolorum magni neque provident. Veritatis odio non exercitationem reprehenderit, saepe rerum qui provident. Tenetur praesentium quaerat nemo, cum sed debitis.</div>
+        <div class="gen20">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ea sit. Veritatis quidem at sint modi, id repellat, aliquid optio iure deleniti magnam veniam explicabo impedit, numquam corrupti voluptatem dignissimos!</div>
+        <div class="gen15">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, ipsam provident ea rem quod rerum voluptatem tenetur ex. Quos assumenda facere blanditiis nulla delectus, voluptates magni natus alias inventore odit!</div>
+        <div class="gen25">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis rerum recusandae molestiae distinctio cumque tempore accusamus dignissimos maxime quidem nulla ad nemo corporis saepe illum facilis, perspiciatis dolor! A, assumenda?</div>
+    </p>
+    <!--Contact/w/e-->
 </body>
 
 </html>

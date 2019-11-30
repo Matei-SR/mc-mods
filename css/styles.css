@@ -3,6 +3,7 @@
 html {
     overflow: scroll;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -60,4 +61,50 @@ a {
 .jh2 {
     margin-left: 20%;
     margin-right: 20%;
+}
+
+.oh1 {
+    margin-top: 1%;
+    background: -webkit-linear-gradient(red, orange, green, purple, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.oh2 {
+    margin-top: 1%;
+    background: -webkit-linear-gradient(gray, black, gray, lightgray);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.oh3 {
+    margin-top: 1%;
+    background: -webkit-linear-gradient(green, brown);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.oh4 {
+    margin-top: 1%;
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 1%;
+    margin-left: 6%;
+    text-align: center;
+}
+
+.row {
+    text-align: center;
 }
