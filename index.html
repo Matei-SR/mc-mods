@@ -28,21 +28,26 @@
                     <a class="nav-link" href="#">Main Page <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#community">Community</a>
+                    <a class="nav-link" href="#default">Categories</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#support">Support</a>
+                    <a class="nav-link" href="/community/">Community</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/support/">Support</a>
+                </li>
+                <!--
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Mods list
-              </a>
+                        Mods list
+                        </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#magic">Magic-type mods</a>
-                        <a class="dropdown-item" href="#tech">Tech-type mods</a>
-                        <a class="dropdown-item" href="#misc">Misc mods</a>
+                        <a class="dropdown-item" href="/magic/">Magic-type mods</a>
+                        <a class="dropdown-item" href="/tech/">Tech-type mods</a>
+                        <a class="dropdown-item" href="/misc/">Misc mods</a>
                     </div>
                 </li>
+                -->
             </ul>
         </div>
     </nav>
@@ -57,7 +62,8 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <a data-toggle="collapse" href="#tech" role="button" aria-expanded="false" aria-controls="tech" onclick="down()">
+                <!--<a data-toggle="collapse" href="#tech" role="button" aria-expanded="false" aria-controls="tech" onclick="down()">-->
+                <a href="#default">
                     <img class="carouselimg d-block w-100" src="media/te.jpg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 class="f1">Tech Mods</h1>
@@ -65,14 +71,18 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <a data-toggle="collapse" href="#magic" role="button" aria-expanded="false" aria-controls="magic" onclick="down()"> <img class="carouselimg d-block w-100" src="media/astral.png" alt="Second slide">
+                <!--<a data-toggle="collapse" href="#magic" role="button" aria-expanded="false" aria-controls="magic" onclick="down()">-->
+                <a href="#default">
+                    <img class="carouselimg d-block w-100" src="media/astral.png" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 class="f1">Magic Mods</h1>
                 </a>
                 </div>
             </div>
             <div class="carousel-item">
-                <a data-toggle="collapse" href="#misc" role="button" aria-expanded="false" aria-controls="misc" onclick="down()"><img class="carouselimg d-block w-100" src="media/chisel.png" alt="Third slide">
+                <!--<a data-toggle="collapse" href="#misc" role="button" aria-expanded="false" aria-controls="misc" onclick="down()">-->
+                <a href="#default">
+                    <img class="carouselimg d-block w-100" src="media/chisel.png" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h1 class="f1">Misc Mods</h1>
                 </a>
@@ -98,49 +108,45 @@
     </div>
     <!--/Intro-->
     <hr>
-    <div class="accordion" id="accordionExample" data-default="1">
+    <!---- <div class="accordion" id="accordionExample" data-default="1"></div> -->
 
-        <!--Default(Types)-->
-        <div class="collapse show" id="default" data-parent="#accordionExample">
-            <div class="f2 center">
-                <h1 class="oh4">Mod categories</h1>
+    <!--Default(Types)-->
+    <div class="f2 center">
+        <h1 class="oh4 f1">Mod categories</h1>
+    </div>
+
+    <div class="row">
+        <div class="card col-3" style="width: 18rem;">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+                <h4 class="card-title">Tech mods</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consequatur aliquam recusandae, neque eaque blanditiis illum quis quia eum officiis. Itaque iste explicabo provident tempora error debitis distinctio quisquam suscipit.</p>
+                <a href="/tech/" target="_blank" class="btn btn-primary">See more</a>
             </div>
-
-            <div class="row">
-                <div class="card col-3" style="width: 18rem;">
-                    <!-- <img src="..." class="card-img-top" alt="..."> -->
-                    <div class="card-body">
-                        <h5 class="card-title">Tech mods</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consequatur aliquam recusandae, neque eaque blanditiis illum quis quia eum officiis. Itaque iste explicabo provident tempora error debitis distinctio quisquam suscipit.</p>
-                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a>-->
-                    </div>
-                </div>
-
-                <div class="card col-3" style="width: 18rem;">
-                    <!-- <img src="..." class="card-img-top" alt="..."> -->
-                    <div class="card-body">
-                        <h5 class="card-title">Magic mods</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consequatur aliquam recusandae, neque eaque blanditiis illum quis quia eum officiis. Itaque iste explicabo provident tempora error debitis distinctio quisquam suscipit.</p>
-                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a>-->
-                    </div>
-                </div>
-
-                <div class="card col-3" style="width: 18rem;">
-                    <!-- <img src="..." class="card-img-top" alt="..."> -->
-                    <div class="card-body">
-                        <h5 class="card-title">Misc mods</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consequatur aliquam recusandae, neque eaque blanditiis illum quis quia eum officiis. Itaque iste explicabo provident tempora error debitis distinctio quisquam suscipit.</p>
-                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a>-->
-                    </div>
-                </div>
-            </div>
-
         </div>
-        <a id="default"></a>
-        <!--/Default-->
 
+        <div class="card col-3" style="width: 18rem;">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+                <h4 class="card-title">Magic mods</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consequatur aliquam recusandae, neque eaque blanditiis illum quis quia eum officiis. Itaque iste explicabo provident tempora error debitis distinctio quisquam suscipit.</p>
+                <a href="/magic/" target="_blank" class="btn btn-primary">See more</a>
+            </div>
+        </div>
 
-        <!--Tech-->
+        <div class="card col-3" style="width: 18rem;">
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+                <h4 class="card-title">Misc mods</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consequatur aliquam recusandae, neque eaque blanditiis illum quis quia eum officiis. Itaque iste explicabo provident tempora error debitis distinctio quisquam suscipit.</p>
+                <a href="/misc/" target="_blank" class="btn btn-primary">See more</a>
+            </div>
+        </div>
+
+    </div>
+    <a id="default"></a>
+    <!--/Default-->
+    <!--
         <div class="collapse container-fluid" id="tech" data-parent="#accordionExample">
             <div class="f2 center">
                 <h1 class="oh2">Tech mods</h1>
@@ -177,9 +183,9 @@
 
         </div>
         <a id="tech"></a>
-        <!--/Tech-->
+      
 
-        <!--Magic-->
+       
         <div data-parent="#accordionExample" class="collapse container-fluid" id="magic">
             <div class="f2 center">
                 <h1 class="oh1">Magic mods</h1>
@@ -216,9 +222,9 @@
 
         </div>
         <a id="magic"></a>
-        <!--/Magic-->
+      
 
-        <!--Misc-->
+        
         <div class="collapse container-fluid" id="misc" data-parent="#accordionExample">
             <div class="f2 center">
                 <h1 class="oh3">Misc mods</h1>
@@ -255,17 +261,18 @@
 
         </div>
         <a id="misc"></a>
-        <!--/Misc-->
+        
     </div>
     <hr>
-    <!--Contact or w/e-->
+  
     <p>
         <div class="gen20">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis deserunt dolorum magni neque provident. Veritatis odio non exercitationem reprehenderit, saepe rerum qui provident. Tenetur praesentium quaerat nemo, cum sed debitis.</div>
         <div class="gen20">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, ea sit. Veritatis quidem at sint modi, id repellat, aliquid optio iure deleniti magnam veniam explicabo impedit, numquam corrupti voluptatem dignissimos!</div>
         <div class="gen15">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, ipsam provident ea rem quod rerum voluptatem tenetur ex. Quos assumenda facere blanditiis nulla delectus, voluptates magni natus alias inventore odit!</div>
         <div class="gen25">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis rerum recusandae molestiae distinctio cumque tempore accusamus dignissimos maxime quidem nulla ad nemo corporis saepe illum facilis, perspiciatis dolor! A, assumenda?</div>
     </p>
-    <!--Contact/w/e-->
+   
+    -->
 </body>
 
 </html>
