@@ -1,7 +1,38 @@
-body {
-    background: linear-gradient(to left, #550363, #02084f);
+@import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
+html {
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
-div.white {
-    background-color: white;
+::-webkit-scrollbar {
+    width: 0px;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+
+/* Optional: show position indicator in red */
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+z1 {
+    z-index: 1;
+}
+
+z2 {
+    z-index: 2;
+}
+
+.carouselimg {
+    height: 540px;
+}
+
+.main {
+    margin-top: 20px;
+    font-family: 'Alatsi', sans-serif;
+    text-align: center;
+    font-weight: bold;
 }
