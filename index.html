@@ -2,7 +2,6 @@
 <html>
 
 <head>
-    <!--daca citesti vpm-->
     <title>MC Mods | Wiki</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
@@ -15,8 +14,11 @@
 </head>
 
 <body>
+    <script>
+        document.body.className += ' fade-out';
+    </script>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent f2">
         <a class="navbar-brand" href="#">MC Mods Wikipedia</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -24,22 +26,22 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Main Page <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Main Page <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="community/">Community</a>
+                    <a class="nav-link" href="#community">Community</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="support/">Support</a>
+                    <a class="nav-link" href="#support">Support</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Mods list
               </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="magic-mods.html">Magic-type mods</a>
-                        <a class="dropdown-item" href="tech-mods.html">Tech-type mods</a>
-                        <a class="dropdown-item" href="misc-mods.html">Misc mods</a>
+                        <a class="dropdown-item" href="#magic">Magic-type mods</a>
+                        <a class="dropdown-item" href="#tech">Tech-type mods</a>
+                        <a class="dropdown-item" href="#misc">Misc mods</a>
                     </div>
                 </li>
             </ul>
@@ -56,21 +58,24 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="carouselimg d-block w-100" src="media/te.jpg" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1>Tech Mods</h1>
+                <a href="#tech"> <img class="carouselimg d-block w-100" src="media/te.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="f1">Tech Mods</h1>
+                </a>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="carouselimg d-block w-100" src="media/astral.png" alt="Second slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1>Magic Mods</h1>
+                <a href="#magic"> <img class="carouselimg d-block w-100" src="media/astral.png" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="f1">Magic Mods</h1>
+                </a>
                 </div>
             </div>
             <div class="carousel-item">
-                <img class="carouselimg d-block w-100" src="media/chisel.png" alt="Third slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h1>Misc Mods</h1>
+                <a href="#misc"><img class="carouselimg d-block w-100" src="media/chisel.png" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="f1">Misc Mods</h1>
+                </a>
                 </div>
             </div>
         </div>
@@ -86,10 +91,15 @@
     <!--/Carousel-->
 
     <!--Introduction-->
-    <div class="main">
-        <h1>TEST</h1>
+    <div class="f1" alt="intro">
+        <h2 class="ih2">The</h2>
+        <h1 class="ih1">Minecraft Mod Wiki</h1>
+        <h3 class="jh2">is a database of Minecraft mods, data packs, bedrock edition add-ons, and resource packs.</h3>
     </div>
     <!--/Intro-->
+    <!--Yes-->
+
+    <!--/Yes-->
 </body>
 
 </html>

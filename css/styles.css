@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 html {
     overflow: scroll;
     overflow-x: hidden;
@@ -6,33 +7,57 @@ html {
 
 ::-webkit-scrollbar {
     width: 0px;
-    /* Remove scrollbar space */
     background: transparent;
-    /* Optional: just make scrollbar invisible */
-}
-
-
-/* Optional: show position indicator in red */
-
-::-webkit-scrollbar-thumb {
-    background: #FF0000;
-}
-
-z1 {
-    z-index: 1;
-}
-
-z2 {
-    z-index: 2;
 }
 
 .carouselimg {
-    height: 540px;
+    height: 720px;
 }
 
-.main {
-    margin-top: 20px;
+.f1 {
     font-family: 'Alatsi', sans-serif;
+}
+
+.f2 {
+    font-family: 'Lato', sans-serif;
+}
+
+.ih1 {
+    margin-top: 20px;
     text-align: center;
     font-weight: bold;
+}
+
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    max-width: 100%;
+    font-weight: 1;
+    font-size: 120%;
+}
+
+.ih2 {
+    font-weight: slim;
+    margin-top: 20px;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+.jh2 {
+    margin-left: 20%;
+    margin-right: 20%;
 }
