@@ -2,33 +2,32 @@
 <html>
 
 <head>
-    <title>MC Mods | Wiki</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>MC Mods | Tech</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js"></script>
-    <link rel="icon" href="media/logo.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/script.js"></script>
+    <link rel="icon" href="/media/icon.png">
 </head>
 
 <body>
     <script>
         document.body.className += ' fade-out';
     </script>
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent f2 fixed-top">
-        <a class="navbar-brand" href="#">Minecraft Mod Wiki</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent f2">
+        <a class="navbar-brand" href="/">Minecraft Mod Wiki</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                  <span class="navbar-toggler-icon"></span>
+                </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Main Page <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#default">Categories</a>
+                    <a class="nav-link" href="/">Main Page <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Categories<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/community/">Community</a>
@@ -36,24 +35,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#support">Support</a>
                 </li>
-                <!--
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Mods list
-                        </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="/magic/">Magic-type mods</a>
-                        <a class="dropdown-item" href="/tech/">Tech-type mods</a>
-                        <a class="dropdown-item" href="/misc/">Misc mods</a>
-                    </div>
-                </li>
-                -->
             </ul>
         </div>
     </nav>
-    <!--/Navbar-->
 
-    <!--Carousel-->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -63,28 +48,28 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <!--<a data-toggle="collapse" href="#tech" role="button" aria-expanded="false" aria-controls="tech" onclick="down()">-->
-                <a href="#default">
-                    <img class="carouselimg d-block w-100" src="media/te.jpg" alt="First slide">
+                <a href="#mod">
+                    <img class="carouselimg d-block w-100" src="/media/astral.png" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1 class="f1">Tech Mods</h1>
+                        <h1 class="f1">Astral Sorcery</h1>
                 </a>
                 </div>
             </div>
             <div class="carousel-item">
                 <!--<a data-toggle="collapse" href="#magic" role="button" aria-expanded="false" aria-controls="magic" onclick="down()">-->
-                <a href="#default">
-                    <img class="carouselimg d-block w-100" src="media/astral.png" alt="Second slide">
+                <a href="#mod">
+                    <img class="carouselimg d-block w-100" src="/media/example.png" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1 class="f1">Magic Mods</h1>
+                        <h1 class="f1">Blood Magic</h1>
                 </a>
                 </div>
             </div>
             <div class="carousel-item">
                 <!--<a data-toggle="collapse" href="#misc" role="button" aria-expanded="false" aria-controls="misc" onclick="down()">-->
-                <a href="#default">
-                    <img class="carouselimg d-block w-100" src="media/chisel.png" alt="Third slide">
+                <a href="#mod">
+                    <img class="carouselimg d-block w-100" src="/media/example.png" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1 class="f1">Misc Mods</h1>
+                        <h1 class="f1">Wizardry</h1>
                 </a>
                 </div>
             </div>
@@ -98,54 +83,38 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <!--/Carousel-->
+    <div class="container-fluid">
+        <a id="mod"></a>
+        <div class="row">
+            <h2><b>Magic mods</b> are lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla laborum sola molestias quisquam quos eum vel neque non reiciendis quia.</h2>
+            <hr>
+            <div class="col-4">
+                <h1 class="title-h1">Astral Sorcery</h1>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, reprehenderit error magnam officiis excepturi nemo nulla similique saepe asperiores ad sapiente vitae obcaecati praesentium ex reiciendis modi nesciunt fugiat soluta veniam.
+                    Optio eius unde distinctio itaque illo eveniet? Voluptate aliquam repellendus nesciunt quaerat, numquam reprehenderit rerum ut, dolorem enim, hic ex! Autem, quod, provident illum voluptatibus eius dicta laudantium iste repellat totam
+                    architecto aspernatur deserunt debitis voluptatum dolorum assumenda. Explicabo sint animi iste officiis aliquid consequuntur doloribus minus dolores at mollitia est dolorem consectetur pariatur numquam rem ea voluptatum nulla suscipit
+                    deleniti asperiores possimus vitae, nam nesciunt? Dignissimos, quia necessitatibus!</p>
+            </div>
 
-    <!--Introduction-->
-    <a id="default"></a>
-    <div class="f1" alt="intro">
-        <h2 class="ih2">The</h2>
-        <h1 class="ih1">Minecraft Mod Wiki</h1>
-        <h3 class="jh2">is a database of Minecraft mods, data packs, Java edition add-ons, and resource packs.</h3>
-    </div>
-    <!--/Intro-->
-    <hr>
-    <!---- <div class="accordion" id="accordionExample" data-default="1"></div> -->
+            <div class="col-4">
+                <h1 class="title-h1">Blood Magic</h1>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ipsam iure dolor tempore magnam repudiandae perferendis, architecto consectetur facilis expedita excepturi corporis, pariatur laborum dolores dignissimos mollitia. Voluptates
+                    tenetur veniam quod sequi animi, itaque perferendis minus, accusantium possimus, architecto saepe quis? Placeat ipsam, debitis voluptatum quas reprehenderit exercitationem tenetur, rerum voluptatibus impedit nesciunt asperiores earum
+                    accusamus omnis ad dolor officiis. Illo molestias, corrupti porro dignissimos recusandae ex laboriosam facilis vitae iste quas voluptatem reprehenderit omnis aut unde ullam, sunt earum quo, blanditiis esse? Libero nemo eaque sapiente
+                    voluptate eum fugit voluptates quod in, officia eius at nostrum aperiam architecto ipsum!</p>
+            </div>
 
-    <!--Default(Types)-->
-
-    <div class="f2 center">
-        <h1 class="oh4 f1">Mod categories</h1>
-    </div>
-
-    <div class="row">
-        <div class="card col-3" style="width: 18rem;">
-            <!-- <img src="..." class="card-img-top" alt="..."> -->
-            <div class="card-body">
-                <h4 class="card-title">Tech mods</h4>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consequatur aliquam recusandae, neque eaque blanditiis illum quis quia eum officiis. Itaque iste explicabo provident tempora error debitis distinctio quisquam suscipit.</p>
-                <a href="/tech/" target="_blank" class="btn btn-primary">See more</a>
+            <div class="col-4">
+                <h1 class="title-h1">Wizardry</h1>
+                <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet exercitationem a laboriosam nesciunt explicabo quas laborum, corrupti modi odit sit, doloremque nihil. Provident id error, asperiores ex adipisci libero quia atque culpa fugiat
+                    hic voluptas unde, reiciendis obcaecati officia delectus totam velit repellat facilis? Commodi iste cum eos dolores necessitatibus delectus ipsam velit quo, praesentium fugit tenetur voluptates ab ad explicabo laboriosam, atque non
+                    nihil adipisci. Sequi facere reiciendis inventore illum eum nam, nostrum assumenda laboriosam exercitationem fugit sed quod sapiente voluptatum itaque vero in libero quidem iure repudiandae eligendi molestias placeat numquam sit accusamus?
+                    Distinctio deleniti enim quos mollitia.</p>
             </div>
         </div>
-
-        <div class="card col-3" style="width: 18rem;">
-            <!-- <img src="..." class="card-img-top" alt="..."> -->
-            <div class="card-body">
-                <h4 class="card-title">Magic mods</h4>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consequatur aliquam recusandae, neque eaque blanditiis illum quis quia eum officiis. Itaque iste explicabo provident tempora error debitis distinctio quisquam suscipit.</p>
-                <a href="/magic/" target="_blank" class="btn btn-primary">See more</a>
-            </div>
-        </div>
-
-        <div class="card col-3" style="width: 18rem;">
-            <!-- <img src="..." class="card-img-top" alt="..."> -->
-            <div class="card-body">
-                <h4 class="card-title">Misc mods</h4>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consequatur aliquam recusandae, neque eaque blanditiis illum quis quia eum officiis. Itaque iste explicabo provident tempora error debitis distinctio quisquam suscipit.</p>
-                <a href="/misc/" target="_blank" class="btn btn-primary">See more</a>
-            </div>
-        </div>
-
     </div>
+
+
 
 
     <br>
@@ -209,5 +178,3 @@
     <a id="support"></a>
 
 </body>
-
-</html>
