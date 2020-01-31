@@ -90,6 +90,12 @@ a {
     font-size: 120%;
 }
 
+.description-sm {
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 100%;
+}
+
 .title-h1 {
     text-align: center;
     font-family: 'Teko', sans-serif;
@@ -130,4 +136,8 @@ h4 {
     font-weight: normal;
     padding-left: 15%;
     padding-right: 15%;
+}
+
+li {
+    text-align: justify;
 }
